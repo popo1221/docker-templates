@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2020-01-03</Date>
+  <Beta>False</Beta>
+  <Category>Proxy:shadowsocks-libev.v2ray-plugin</Category>
+  <Name>shadowsocks-libev.v2ray-plugin</Name>
+  <Project>https://github.com/popo1221/docker-templates</Project>
+  <Changes>
+[center][img width='155px' src='https://d2631fvi2jdnb6.cloudfront.net/docker/limetech.png'][/center]
+
+[center][font size=4]shadowsocks-libev.v2ray-plugin Change Log[/font][/center]
+
+[font size=3]2020.01.03[/font]
+- Initial Release
+  </Changes>
+  <Overview>
+    libev port of shadowsocks with a SIP003 plugin based on v2ray. (Multiarch) 
+  </Overview>
+  <Description>
+    libev port of shadowsocks with a SIP003 plugin based on v2ray. (Multiarch) 
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/gists/shadowsocks-libev.v2ray-plugin/</Registry>
+  <GitHub>https://github.com/vgist/dockerfiles</GitHub>
+  <Repository>vgist/dockerfiles</Repository>
+  <Support>https://github.com/vgist/dockerfiles/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/shadowsocks-libev.v2ray-plugin</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <Icon>https://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>
