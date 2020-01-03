@@ -37,8 +37,6 @@
   </Networking>
   <Environment/>
   <Network Default="bridge">bridge</Network>
-  <Config Type="Port" Name="Proxy Port" Target="8388" Default="8388" Mode="tcp" Display="always-hide" Required="true"
-       Description="This Proxy Port">8388</Config>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/shadowsocks-libev.v2ray-plugin</HostDir>
@@ -46,6 +44,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Banner></Banner>
-  <Icon>https://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+  <Config Type="Port" Name="Proxy Port" Target="8388" Default="8388" Mode="tcp" Display="always-hide" Required="true"
+       Description="This Proxy Port">8388</Config>
 </Containers>
