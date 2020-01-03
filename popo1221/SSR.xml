@@ -26,10 +26,19 @@
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
-    <Mode>host</Mode>
-    <Publish/>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8388</HostPort>
+        <ContainerPort>8388</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Environment/>
+  <Network Default="bridge">bridge</Network>
+  <Config Type="Port" Name="Proxy Port" Target="8388" Default="8388" Mode="tcp" Display="always-hide" Required="true"
+       Description="This Proxy Port">8388</Config>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/shadowsocks-libev.v2ray-plugin</HostDir>
